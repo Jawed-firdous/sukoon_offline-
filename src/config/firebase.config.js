@@ -3,14 +3,15 @@ import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth"
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBjwl-4yLN-sa7txboIDo6kp-c5j_oSmqU",
-  authDomain: "sukoon-diabetic.firebaseapp.com",
-  projectId: "sukoon-diabetic",
-  storageBucket: "sukoon-diabetic.appspot.com",
-  messagingSenderId: "901596808539",
-  appId: "1:901596808539:web:148ddca315d02e2afcc67e",
-  measurementId: "G-7BQCH611K4"
+  apiKey: "AIzaSyAlWzv-d9MTTKFEzD0sKa67B9-EPUSkIag",
+  authDomain: "sukoon-diabetic-centre.firebaseapp.com",
+  projectId: "sukoon-diabetic-centre",
+  storageBucket: "sukoon-diabetic-centre.appspot.com",
+  messagingSenderId: "1001096130904",
+  appId: "1:1001096130904:web:816a4700ce5b731be4752d",
+  measurementId: "G-EHVZ43WNXG"
 };
+
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
