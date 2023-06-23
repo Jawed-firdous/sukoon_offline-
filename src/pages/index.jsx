@@ -397,8 +397,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Sukoon Diabetic Centre - Homeopathic Medicines for Diabetes and Related Problems</title>
         <meta name="description" content="Sukoon Diabetic Centre offers a range of homeopathic medicines for the treatment of diabetes and related problems. Our medicines are made using natural ingredients and are safe for long-term use. Order now and experience the benefits of homeopathy." />
-        <meta name="keywords" content="Homeopathic Medicine , Homeopathic
-, Homeopathic Doctor , Homeopathic Meaning , Homeopathic Allergy Relief , Homeopathic Remedies , Homeopathic Doctors Near Me
+        <meta name="keywords" content="Homeopathic Medicine , Homeopathic , Homeopathic Doctor , Homeopathic Meaning , Homeopathic Allergy Relief , Homeopathic Remedies , Homeopathic Doctors Near Me
  , Homeopathic Medicine Near Me , Homeopathic Definition
  , Homeopathic Ear Drops" />
       </Head>
