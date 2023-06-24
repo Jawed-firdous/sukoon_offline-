@@ -471,8 +471,8 @@ function DescriptionPage() {
                 !showCart && <div class="min-w-screen min-h-screen bg-[#94c755] items-center p-5 lg:p-10 overflow-hidden relative mt-10">
                     <div class="w-full max-w-6xl rounded bg-white shadow-xl p-3 lg:p-20 mx-auto text-gray-800 relative md:text-left mt-14">
                         <div class="md:flex items-center -mx-10">
-                            <div class="w-full md:w-1/2 px-10 mb-10 md:mb-0 md:border-r border-[#94c755]">
-                                <div class="border bg-[#94c755]" >
+                            <div class="w-full md:w-1/2 px-10 mb-10 md:mb-0 md:border-r border-[#2e302c]">
+                                <div class="border bg-[#2e302c]" >
                                     <Carousel className="border description-carousel">
                                         {data?.embedLink?.length > 10 && <div>
                                             <iframe src={data?.embedLink} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="w-full h-64 "></iframe>
