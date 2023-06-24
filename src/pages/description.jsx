@@ -485,10 +485,7 @@ function DescriptionPage() {
                                                     <div key={index} className="unique-div !min-h-[240px] !flex !justify-center !items-center">
                                                         <img src={val?.url} alt="" className='m-auto h-[256px]' />
                                                     </div>
-                                                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+                                                    
                                                     // </div>
                                                 )
                                             })
