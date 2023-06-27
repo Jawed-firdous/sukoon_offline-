@@ -418,7 +418,6 @@ function DescriptionPage() {
         getUserData()
         updateProductInLocalStorage()
     },
-                const url = window.location.href;
 
               [])
 
