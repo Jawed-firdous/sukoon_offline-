@@ -42,6 +42,8 @@ function DescriptionPage() {
     const [isAddressModalOpen, setAddressModalOpen] = useState(false)
     const [newAddress, setNewAddress] = useState(null)
     const [email, setEmail] = useState(auth?.currentUser?.email)
+                const url = window.location.href;
+
 
     // New JS 
     const showModal = () => {
@@ -418,7 +420,6 @@ function DescriptionPage() {
     useEffect(() => {
         getUserData()
         updateProductInLocalStorage()
-            const url = window.location.href;
 
     },
 
