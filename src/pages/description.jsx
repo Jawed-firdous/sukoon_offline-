@@ -419,9 +419,9 @@ function DescriptionPage() {
         updateProductInLocalStorage()
         console.log(location, "location")
         console.log(navigator, "navigator")
-    }, [location]);
+    }, []);
 
-    return (
+    return 
         <>
             <Head>
                 <title>{data?.name}</title>
