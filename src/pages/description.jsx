@@ -417,6 +417,7 @@ function DescriptionPage() {
     useEffect(() => {
         getUserData()
         updateProductInLocalStorage()
+        console.log(navigator)
     }, [])
 
     return (
