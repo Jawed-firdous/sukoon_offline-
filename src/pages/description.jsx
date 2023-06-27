@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import React from "react";
 import axios from "axios";
 import { doc, getDoc, where, query, collection, onSnapshot, addDoc, Timestamp, updateDoc } from "firebase/firestore"
@@ -25,6 +26,7 @@ import Footer from "@/components/footer";
 import { signOut } from "firebase/auth";
 
 function DescriptionPage() {
+    const url = window.location.href;
     const router = useRouter()
     // const productId = router.query?.productId;
     const [productId, setProductId] = useState(null)
