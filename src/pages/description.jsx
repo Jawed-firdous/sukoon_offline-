@@ -423,7 +423,7 @@ function DescriptionPage() {
 
               []);
 
-    return 
+    return (
         <>
             <Head>
                 <title>{data?.name}</title>
