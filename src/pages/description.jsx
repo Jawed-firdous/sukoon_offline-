@@ -42,8 +42,7 @@ function DescriptionPage() {
     const [isAddressModalOpen, setAddressModalOpen] = useState(false)
     const [newAddress, setNewAddress] = useState(null)
     const [email, setEmail] = useState(auth?.currentUser?.email)
-                const url = window.location.href;
-
+                
 
     // New JS 
     const showModal = () => {
@@ -523,7 +522,7 @@ function DescriptionPage() {
                                         <FaYoutube />
                                     </a>
                                     
-                                    <a class="ml-3 text-gray-500" href="https://wa.me/+923322418007?text={url}" target="_blank">
+                                    <a class="ml-3 text-gray-500" href={`https://wa.me/+923322418007?text=${window.location.href}`} target="_blank">
                                         <FaWhatsapp />
                                     </a>
                                 </div>
