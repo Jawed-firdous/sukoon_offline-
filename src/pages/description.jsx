@@ -418,7 +418,10 @@ function DescriptionPage() {
         getUserData()
         updateProductInLocalStorage()
         
-    }, []);
+    }, 
+                const url = window.location.href;
+
+              []);
 
     return 
         <>
@@ -517,7 +520,7 @@ function DescriptionPage() {
                                     <a class="ml-3 text-gray-500" href="https://www.youtube.com/@sukoondiabetescentre1989/videos" target="_blank">
                                         <FaYoutube />
                                     </a>
-                                  <a class="ml-3 text-gray-500" href="{`https://wa.me/+923322418007?text=${window.location.href}`}" target="_blank">
+                                  <a class="ml-3 text-gray-500" href={`https://wa.me/+923322418007?text={url}`} target="_blank">
                                         <FaWhatsapp />
                                     </a>
                                 </div>
