@@ -525,7 +525,7 @@ function DescriptionPage() {
                                         <FaYoutube />
                                     </a>
                                     
-                                    <a class="ml-3 text-gray-500" href="https://wa.me/+923322418007?text=https://sukoon-offline.vercel.app/description?productId=(ddd)" target="_blank">
+                                    <a class="ml-3 text-gray-500" href="https://wa.me/+923322418007?text=https://sukoon-offline.vercel.app/description?productId={console.log(ddd);}" target="_blank">
                                         <FaWhatsapp />
                                     </a>
                                 </div>
