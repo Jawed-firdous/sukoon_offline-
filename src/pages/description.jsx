@@ -419,9 +419,9 @@ function DescriptionPage() {
     useEffect(() => {
         getUserData()
         updateProductInLocalStorage()
-        const ddd = window.location.href;
 
     },
+        const ddd = window.location.href;
 
               [])
 
@@ -525,7 +525,7 @@ function DescriptionPage() {
                                         <FaYoutube />
                                     </a>
                                     
-                                    <a class="ml-3 text-gray-500" href="https://wa.me/+923322418007?share={console.log($ddd);}" target="_blank">
+                                    <a class="ml-3 text-gray-500" href="https://wa.me/+923322418007?share={console.log( ddd );}" target="_blank">
                                         <FaWhatsapp />
                                     </a>
                                 </div>
