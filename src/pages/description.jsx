@@ -515,6 +515,10 @@ function DescriptionPage() {
                                 </div>
 
                                 <div className="flex justify-center gap-3 relative top-2 md:top-4 py-5 lg:top-6">
+                                    <a class="text-gray-500" href="https://www.facebook.com/SukoonDiabetesCentre" target="_blank">
+                                        <FaFacebook />
+                                    </a>
+
                                    
                                     <a class="ml-3 text-gray-500" href="https://www.youtube.com/@sukoondiabetescentre1989/videos" target="_blank">
                                         <FaYoutube />
