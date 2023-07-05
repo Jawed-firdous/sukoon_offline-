@@ -421,8 +421,7 @@ function DescriptionPage() {
         updateProductInLocalStorage()
 
     },
-        const ddd = window.location.href;
-
+        
               [])
 
     return (
