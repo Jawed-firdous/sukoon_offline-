@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import React from "react";
 import axios from "axios";
-import { doc, getDoc, where, query, collection, onSnapshot, addDoc, Timestamp, updateDoc } from "firebase/firestore"
+import { doc, getDoc, where, query, collection, onSnapshot, addDoc, Timestamp, updateDoc } from "firebase/firestore";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { db } from "@/config/firebase.config";
