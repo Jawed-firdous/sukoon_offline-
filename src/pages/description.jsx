@@ -420,7 +420,7 @@ function DescriptionPage() {
         getUserData()
         updateProductInLocalStorage()
         
-        var Id = ' ${router?.asPath} ';
+        var Id = ' router?.asPath ';
 switch ( Id ) { 
 	case 'description?productId=7zG0TGyVfvJ2CBweAnGa': 
 		alert('jQuery sucks!');
