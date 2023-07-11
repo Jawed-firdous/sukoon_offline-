@@ -419,6 +419,23 @@ function DescriptionPage() {
     useEffect(() => {
         getUserData()
         updateProductInLocalStorage()
+        
+        var Id = '{ productId }';
+switch ( Id ) { 
+	case '7zG0TGyVfvJ2CBweAnGa': 
+		alert('jQuery sucks!');
+		break;
+	case 'prototype': 
+		alert('prototype sucks!');
+	case 'mootools': 
+		alert('mootools sucks!');	
+	case 'dojo': 
+		alert('dojo sucks!');
+		break;
+	default:
+		alert('Nobody sucks!');
+}
+//outputs "prototype sucks! mootools sucks! dojo sucks!"
 
     },
         
