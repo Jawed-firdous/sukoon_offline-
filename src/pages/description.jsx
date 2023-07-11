@@ -421,7 +421,7 @@ function DescriptionPage() {
         updateProductInLocalStorage()
         var Id = ' window.location.pathname ';
 switch ( Id ) { 
-	case '7zG0TGyVfvJ2CBweAnGa': 
+	case 'productId=7zG0TGyVfvJ2CBweAnGa': 
 		alert('jQuery sucks!');
 		break;
 	case 'prototype': 
