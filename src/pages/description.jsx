@@ -420,7 +420,7 @@ function DescriptionPage() {
         getUserData()
         updateProductInLocalStorage()
         
-        var Id = '{ productId }';
+        var Id = ' productId ';
 switch ( Id ) { 
 	case '7zG0TGyVfvJ2CBweAnGa': 
 		alert('jQuery sucks!');
