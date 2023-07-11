@@ -513,7 +513,7 @@ function DescriptionPage() {
                                         checkIdExists(productId) ? "Added to cart" : <span onClick={() => addToCart(productId, "plus")}>Add to cart</span>
                                     }</button>
                                     <button className="bg-[#94c755] text-white px-3 py-2 rounded">
-                                    <a href="https://click.daraz.pk/e/_CWG1y9" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Order Now </a>
+                                    <a href="https://click.daraz.pk/e/_CWG1y9" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Order To Daraz </a>
                                         </button>
 
                                 </div>
@@ -531,9 +531,7 @@ function DescriptionPage() {
                                     <a class="ml-3 text-gray-500" href={`https://wa.me/+923322418007?text=https://sukoondiabeticcentre.com${router?.asPath}`} target="_blank">
                                         <FaWhatsapp />
                                     </a>
-                                    <a class="ml-3 text-gray-500" href="https://click.daraz.pk/e/_CWG1y9" target="_blank">
-                                        <FaWhatsapp />
-                                    </a>
+                                    
                                 </div>
                             </div>
                         </div>
