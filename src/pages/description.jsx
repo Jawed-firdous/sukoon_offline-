@@ -419,7 +419,7 @@ function DescriptionPage() {
     useEffect(() => {
         getUserData()
         updateProductInLocalStorage()
-        
+        function display (window.location.pathname){
         var Id = ' window.location.pathname ';
 switch ( Id ) { 
 	case '/description?productId=7zG0TGyVfvJ2CBweAnGa': 
@@ -435,6 +435,7 @@ switch ( Id ) {
 	default:
 		alert('abs');
 }
+		}
 //outputs "prototype sucks! mootools sucks! dojo sucks!"
 
     },
