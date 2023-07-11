@@ -527,6 +527,9 @@ function DescriptionPage() {
                                     <a class="ml-3 text-gray-500" href={`https://wa.me/+923322418007?text=https://sukoondiabeticcentre.com${router?.asPath}`} target="_blank">
                                         <FaWhatsapp />
                                     </a>
+                                    <a class="ml-3 text-gray-500" href="https://click.daraz.pk/e/_CWG1y9" target="_blank">
+                                        <FaWhatsapp />
+                                    </a>
                                 </div>
                             </div>
                         </div>
