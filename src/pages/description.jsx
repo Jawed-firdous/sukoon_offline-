@@ -433,7 +433,7 @@ switch ( Id ) {
 		alert('dojo sucks!');
 		break;
 	default:
-		alert('{Id}');
+		alert($('.Id'));
 }
 //outputs "prototype sucks! mootools sucks! dojo sucks!"
 
