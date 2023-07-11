@@ -419,7 +419,7 @@ function DescriptionPage() {
     useEffect(() => {
         getUserData()
         updateProductInLocalStorage()
-        function display (window.location.pathname){
+        function display (){
         var Id = ' window.location.pathname ';
 switch ( Id ) { 
 	case '/description?productId=7zG0TGyVfvJ2CBweAnGa': 
