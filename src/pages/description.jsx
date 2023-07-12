@@ -419,9 +419,9 @@ function DescriptionPage() {
     useEffect(() => {
         getUserData()
         updateProductInLocalStorage()
-	    var Id = ${router?.asPath};
+	  
 	    
-switch ( `Id` ) { 
+switch ( router.query.productId ) { 
 	case "/description?productId=7zG0TGyVfvJ2CBweAnGa": 
 		alert('jQuery sucks!');
 		break;
@@ -433,7 +433,7 @@ switch ( `Id` ) {
 		alert('dojo sucks!');
 		break;
 	default:
-		alert(`${router?.asPath} `);
+		alert(router.query.productId);
 }
 		
 //outputs "prototype sucks! mootools sucks! dojo sucks!"
