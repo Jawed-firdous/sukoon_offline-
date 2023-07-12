@@ -420,7 +420,7 @@ function DescriptionPage() {
         getUserData()
         updateProductInLocalStorage()
 	    var Id = `${router?.asPath} `;
-	    if (Id == /description?productId=7zG0TGyVfvJ2CBweAnGa){
+	    if (`${router?.asPath} ` == /description?productId=7zG0TGyVfvJ2CBweAnGa){
 	      alert('jQuery sucks!');
 	    }
         
