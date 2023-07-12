@@ -423,7 +423,8 @@ function DescriptionPage() {
 	    
 switch (`${router?.asPath}`) { 
 	case '/description?productId=7zG0TGyVfvJ2CBweAnGa': 
-		alert('jQuery sucks!');
+		var Pro = 'https://click.daraz.pk/e/_CWG1y9' ;
+		return "Pro";
 		break;
 	case 'prototype': 
 		alert('prototype sucks!');
@@ -531,7 +532,7 @@ switch (`${router?.asPath}`) {
                                         checkIdExists(productId) ? "Added to cart" : <span onClick={() => addToCart(productId, "plus")}>Add to cart</span>
                                     }</button>
                                     <button className="bg-[#94c755] text-white px-3 py-2 rounded">
-                                    <a href="https://click.daraz.pk/e/_CWG1y9" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Order To Daraz </a>
+                                    <a href="{Pro}" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Order To Daraz </a>
                                         </button>
 
                                 </div>
