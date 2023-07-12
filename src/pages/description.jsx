@@ -421,7 +421,7 @@ function DescriptionPage() {
         updateProductInLocalStorage()
 	  
 	    
-switch ( router.query.productId ) { 
+switch (` router.query.productId `) { 
 	case "/description?productId=7zG0TGyVfvJ2CBweAnGa": 
 		alert('jQuery sucks!');
 		break;
