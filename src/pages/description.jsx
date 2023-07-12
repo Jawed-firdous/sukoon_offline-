@@ -419,7 +419,7 @@ function DescriptionPage() {
     useEffect(() => {
         getUserData()
         updateProductInLocalStorage()
-        var Id = ' window.location.pathname ';
+        var Id = '${router?.asPath} ';
 switch ( Id ) { 
 	case 'productId=7zG0TGyVfvJ2CBweAnGa': 
 		alert('jQuery sucks!');
