@@ -421,7 +421,7 @@ function DescriptionPage() {
         updateProductInLocalStorage()
         var Id = `${router?.asPath} `;
 switch ( Id ) { 
-	case 'productId=7zG0TGyVfvJ2CBweAnGa': 
+	case 'productId=/description?productId=7zG0TGyVfvJ2CBweAnGa': 
 		alert('jQuery sucks!');
 		break;
 	case 'prototype': 
