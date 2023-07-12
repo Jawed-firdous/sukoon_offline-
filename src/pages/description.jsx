@@ -432,7 +432,7 @@ switch ( Id ) {
 		alert('dojo sucks!');
 		break;
 	default:
-		alert(`${router?.asPath}`);
+		alert(`Id`);
 }
 		
 //outputs "prototype sucks! mootools sucks! dojo sucks!"
