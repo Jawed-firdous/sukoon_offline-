@@ -422,7 +422,7 @@ function DescriptionPage() {
 	  
 	    
 switch (` router.query.productId `) { 
-	case "/description?productId=7zG0TGyVfvJ2CBweAnGa": 
+	case '/description?productId=7zG0TGyVfvJ2CBweAnGa': 
 		alert('jQuery sucks!');
 		break;
 	case 'prototype': 
@@ -433,7 +433,7 @@ switch (` router.query.productId `) {
 		alert('dojo sucks!');
 		break;
 	default:
-		alert(router.query.productId);
+		alert(`router.query.productId`);
 }
 		
 //outputs "prototype sucks! mootools sucks! dojo sucks!"
