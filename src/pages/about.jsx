@@ -230,9 +230,9 @@ export default function About() {
                     <div className="flex justify-center flex-wrap gap-5 my-5">
                         <div className="w-fit m-auto mt-6">
                             <h2 className="text-center font-semibold my-3 px-2 w-fit m-auto border-b border-[#94c755]">
-                                Zindagi mai doctor se kese bachen?
+                                Sukoon herbal store medicines for All Diseases
                             </h2>
-                            <iframe width="360" height="315" src="https://www.youtube.com/embed/rD9NYhUmqKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe width="360" height="315" src="https://www.youtube.com/embed/BE1HabwDBWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                         <div className="w-fit m-auto mt-6">
                             <h2 className="text-center font-semibold my-3 px-2 w-fit m-auto border-b border-[#94c755]">
