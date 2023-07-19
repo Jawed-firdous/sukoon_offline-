@@ -437,7 +437,7 @@ switch (`${router?.asPath}`) {
 		alert('dojo sucks!');
 		break;
 	default:
-		alert(`router.query.productId`);
+		//alert(`router.query.productId`);
 }
 		
 //outputs "prototype sucks! mootools sucks! dojo sucks!"
