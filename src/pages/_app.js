@@ -7,7 +7,7 @@ import "../styles/description-slider.css"
 function MyApp({ Component, pageProps }) {
   return (
     <Component {...pageProps} />
-  { Water = "/description?productId=BvkMWl0CRuksv0DpebN6" }
+ 
   );
 }
 
