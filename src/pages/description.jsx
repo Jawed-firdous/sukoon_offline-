@@ -439,10 +439,7 @@ function DescriptionPage() {
 // 	default:
 // 		//alert(`router.query.productId`);
 // }
-		function /description?productId=BvkMWl0CRuksv0DpebN6(url) {
-		var win = window.open(url, '_blank');
-		win.focus();
-	}
+		
 
     },
         
@@ -457,7 +454,7 @@ function DescriptionPage() {
             {contextHolder}
             {notifictionContextHolder}
             <nav className="flex justify-between items-center px-3 border-b-2 border-[#94c755] bg-white fixed top-0 z-50 w-full">
-                <div onload=openInNewTab("https://tutorial.eyehunts.com/")>
+                <div >
                 <Link href={"/"}>
                             <Image src={logo} width={80} height={80} alt='Logo'></Image>
                         </Link>                </div>
@@ -544,9 +541,7 @@ function DescriptionPage() {
             <About />
           </Route>
         </Switch>  
-		<ul>			<li>
-                <Link to="`${router?.asPath}`">Order To Daraz</Link>
-              </li></ul> */}
+		*/}
                                     <button className="bg-[#94c755] text-white px-3 py-2 rounded">
                                     <a href="#" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Order To Daraz </a>
                                         </button>
