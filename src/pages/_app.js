@@ -4,6 +4,7 @@ import '@/styles/stars.css'
 import "../styles/navbar.css"
 import "../styles/description-slider.css"
 
+
 function MyApp({ Component, pageProps }) {
   return (
     <Component {...pageProps} />
