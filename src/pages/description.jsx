@@ -533,18 +533,18 @@ function DescriptionPage() {
                                     <button className="bg-[#94c755] text-white px-3 py-2 rounded"> {
                                         checkIdExists(productId) ? "Added to cart" : <span onClick={() => addToCart(productId, "plus")}>Add to cart</span>
                                     }</button> 
-{/* 					<Switch>
+{					<Switch exact path="`${router?.asPath}`">
           <Route exact path="/description?productId=BvkMWl0CRuksv0DpebN6">
-            <Home />
+            <button className="bg-[#94c755] text-white px-3 py-2 rounded">
+                                    <a href="#" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Order To Daraz </a>
+                                        </button>
           </Route>
           <Route path="/about">
             <About />
           </Route>
         </Switch>  
-		*/}
-                                    <button className="bg-[#94c755] text-white px-3 py-2 rounded">
-                                    <a href="#" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Order To Daraz </a>
-                                        </button>
+		}
+                                    
 
                                 </div>
 
