@@ -428,7 +428,7 @@ switch (`${router?.asPath}`) {
 
 
 		alert(` Pro `);
-		//return "Pro";
+		//return 'window.$name';
 		break;
 	case 'prototype': 
 		alert('prototype sucks!');
