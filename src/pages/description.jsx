@@ -422,25 +422,6 @@ function DescriptionPage() {
 	  
 	    },
 
-	       function handleMessage(`${router?.asPath}`) {
-switch (`${router?.asPath}`) { 
-	case '/description?productId=7zG0TGyVfvJ2CBweAnGa':
-		message = 'https://click.daraz.pk/e/_CWG1y9' ;
-                alert('globalVariable');
-                break;
-	case 'prototype': 
-		alert('prototype sucks!');
-	case 'mootools': 
-		alert('mootools sucks!');	
-	case 'dojo': 
-		alert('dojo sucks!');
-		break;
-	default:
-		alert(`router.query.productId`);
-}
-		
-	 }
-
         
               []);
 
