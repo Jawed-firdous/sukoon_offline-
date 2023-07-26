@@ -420,7 +420,7 @@ function DescriptionPage() {
         getUserData()
         updateProductInLocalStorage();
 	  
-	
+	 function handleMessage(`${router?.asPath}`) {
 switch (`${router?.asPath}`) { 
 	case '/description?productId=7zG0TGyVfvJ2CBweAnGa': 
 		
@@ -439,7 +439,7 @@ switch (`${router?.asPath}`) {
 		alert(`router.query.productId`);
 }
 		
-
+	 }
     },
 	     
         
