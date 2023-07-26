@@ -439,12 +439,11 @@ switch (`${router?.asPath}`) {
 		alert(`router.query.productId`);
 }
 		
-
+handleMessage('/description?productId=7zG0TGyVfvJ2CBweAnGa');
     },
 	     
         
-              [	 handleMessage('/description?productId=7zG0TGyVfvJ2CBweAnGa');
-])
+              [])
 
     return (
         <>
