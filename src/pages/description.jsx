@@ -423,7 +423,7 @@ function DescriptionPage() {
 	
 switch (`${router?.asPath}`) { 
 	case '/description?productId=7zG0TGyVfvJ2CBweAnGa': 
-		var Pro = "https://click.daraz.pk/e/_CWG1y9" ;
+		globalVariable = "https://click.daraz.pk/e/_CWG1y9" ;
 		window.$name = "https://click.daraz.pk/e/_CWG1y9";
 
 
