@@ -420,12 +420,12 @@ function DescriptionPage() {
         getUserData()
         updateProductInLocalStorage();
 	  
-	 function handleMessage(`${router?.asPath}`) {
+	    },
+
+	       function handleMessage(`${router?.asPath}`) {
 switch (`${router?.asPath}`) { 
-	case '/description?productId=7zG0TGyVfvJ2CBweAnGa': 
-		
-  
-        	message = 'https://click.daraz.pk/e/_CWG1y9' ;
+	case '/description?productId=7zG0TGyVfvJ2CBweAnGa':
+		message = 'https://click.daraz.pk/e/_CWG1y9' ;
                 alert('globalVariable');
                 break;
 	case 'prototype': 
@@ -440,8 +440,7 @@ switch (`${router?.asPath}`) {
 }
 		
 	 }
-    },
-	     
+
         
               [])
 
