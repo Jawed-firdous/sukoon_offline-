@@ -419,7 +419,6 @@ function DescriptionPage() {
     useEffect(() => {
         getUserData()
         updateProductInLocalStorage();
-	  handleMessage('/description?productId=7zG0TGyVfvJ2CBweAnGa');
 
 	    function handleMessage(router) {
   let message;
