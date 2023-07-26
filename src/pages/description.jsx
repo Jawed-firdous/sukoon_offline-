@@ -536,7 +536,7 @@ function DescriptionPage() {
 
 				<button className="bg-[#94c755] text-white px-3 py-2 rounded">
                                     <a href="#" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Order To Daraz </a>
-                                    
+                                    </button>
 
                                 </div>
 
