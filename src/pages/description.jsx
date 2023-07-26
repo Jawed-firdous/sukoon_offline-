@@ -42,7 +42,7 @@ function DescriptionPage() {
     const [isAddressModalOpen, setAddressModalOpen] = useState(false)
     const [newAddress, setNewAddress] = useState(null)
     const [email, setEmail] = useState(auth?.currentUser?.email)
-                var globalVariable;
+               
 
     // New JS 
     const showModal = () => {
@@ -423,15 +423,11 @@ function DescriptionPage() {
 	
 switch (`${router?.asPath}`) { 
 	case '/description?productId=7zG0TGyVfvJ2CBweAnGa': 
-		function displayGlobalVariable() {
+		
   
         	message = "https://click.daraz.pk/e/_CWG1y9" ;
                 alert(globalVariable);
-}
-
-		
-		
-		break;
+                break;
 	case 'prototype': 
 		alert('prototype sucks!');
 	case 'mootools': 
