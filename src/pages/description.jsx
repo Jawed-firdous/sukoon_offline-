@@ -421,28 +421,7 @@ function DescriptionPage() {
         updateProductInLocalStorage();
 	  
 	    },
-	  function handleMessage(router) {
-  let message;
-
-  switch (router?.asPath) {
-    case '/description?productId=7zG0TGyVfvJ2CBweAnGa':
-      message = 'https://click.daraz.pk/e/_CWG1y9';
-      alert(message); // Display the message variable in an alert box.
-      break;
-    case 'prototype':
-      alert('prototype sucks!');
-      break; // Add break to avoid fallthrough.
-    case 'mootools':
-      alert('mootools sucks!');
-      break; // Add break to avoid fallthrough.
-    case 'dojo':
-      alert('dojo sucks!');
-      break;
-    default:
-      alert(router.query.productId);
-  }
-}
-
+	      }
         
               []);
 
