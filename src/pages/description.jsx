@@ -426,10 +426,7 @@ switch (`${router?.asPath}`) {
 		var Pro = "https://click.daraz.pk/e/_CWG1y9" ;
 		window.name = "https://click.daraz.pk/e/_CWG1y9";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  
-); 
+
 		alert(` Pro `);
 		//return "Pro";
 		break;
