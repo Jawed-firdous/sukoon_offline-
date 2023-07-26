@@ -425,7 +425,7 @@ switch (`${router?.asPath}`) {
 	case '/description?productId=7zG0TGyVfvJ2CBweAnGa': 
 		
   
-        	message = "https://click.daraz.pk/e/_CWG1y9" ;
+        	message = 'https://click.daraz.pk/e/_CWG1y9' ;
                 alert(globalVariable);
                 break;
 	case 'prototype': 
