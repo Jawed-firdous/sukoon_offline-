@@ -442,7 +442,7 @@ switch (`${router?.asPath}`) {
 	 }
 
         
-              [])
+              []);
 
     return (
         <>
