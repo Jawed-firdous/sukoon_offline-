@@ -420,25 +420,23 @@ function DescriptionPage() {
         getUserData()
         updateProductInLocalStorage();
 	  
-	if("${router?.asPath} == /description?productId=7zG0TGyVfvJ2CBweAnGa"){
-	    alert(' https://click.daraz.pk/e/_CWG1y9 ');
-	    }
-// switch (`${router?.asPath}`) { 
-// 	case '/description?productId=7zG0TGyVfvJ2CBweAnGa': 
-// 		var Pro = "https://click.daraz.pk/e/_CWG1y9" ;
-// 		//alert(` Pro `);
-// 		return "Pro";
-// 		break;
-// 	case 'prototype': 
-// 		alert('prototype sucks!');
-// 	case 'mootools': 
-// 		alert('mootools sucks!');	
-// 	case 'dojo': 
-// 		alert('dojo sucks!');
-// 		break;
-// 	default:
-// 		//alert(`router.query.productId`);
-// }
+	
+switch (`${router?.asPath}`) { 
+	case '/description?productId=7zG0TGyVfvJ2CBweAnGa': 
+		var Pro = "https://click.daraz.pk/e/_CWG1y9" ;
+		alert(` Pro `);
+		//return "Pro";
+		break;
+	case 'prototype': 
+		alert('prototype sucks!');
+	case 'mootools': 
+		alert('mootools sucks!');	
+	case 'dojo': 
+		alert('dojo sucks!');
+		break;
+	default:
+		alert(`router.query.productId`);
+}
 		
 
     },
