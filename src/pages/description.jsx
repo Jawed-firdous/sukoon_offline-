@@ -443,8 +443,8 @@ switch (`${router?.asPath}`) {
     },
 	     
         
-              [])
-	 handleMessage('/description?productId=7zG0TGyVfvJ2CBweAnGa');
+              [	 handleMessage('/description?productId=7zG0TGyVfvJ2CBweAnGa');
+])
 
     return (
         <>
