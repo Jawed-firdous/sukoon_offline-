@@ -424,6 +424,9 @@ function DescriptionPage() {
 switch (`${router?.asPath}`) { 
 	case '/description?productId=7zG0TGyVfvJ2CBweAnGa': 
 		var Pro = "https://click.daraz.pk/e/_CWG1y9" ;
+		 <button className="bg-[#94c755] text-white px-3 py-2 rounded">
+                                    <a href="#" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Order To Daraz </a>
+                                    </button>
 		alert(` Pro `);
 		//return "Pro";
 		break;
@@ -531,32 +534,11 @@ switch (`${router?.asPath}`) {
                                     <button className="bg-[#94c755] text-white px-3 py-2 rounded"> {
                                         checkIdExists(productId) ? "Added to cart" : <span onClick={() => addToCart(productId, "plus")}>Add to cart</span>
                                     }</button>
-					{
-						switch (`${router?.asPath}`) { 
-	case '/description?productId=7zG0TGyVfvJ2CBweAnGa': 
-		var Pro = "https://click.daraz.pk/e/_CWG1y9" ;
-									<button className="bg-[#94c755] text-white px-3 py-2 rounded">
+			              <button className="bg-[#94c755] text-white px-3 py-2 rounded">
                                     <a href="#" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Order To Daraz </a>
                                     </button>
-		alert(` Pro `);
-		//return "Pro";
-		break;
-	case 'prototype': 
-		alert('prototype sucks!');
-	case 'mootools': 
-		alert('mootools sucks!');	
-	case 'dojo': 
-		alert('dojo sucks!');
-		break;
-	default:
-		alert(`router.query.productId`);
-}
 
-					}
-
-
-
-                                </div>
+                                    </div>
 
                                 <div className="flex justify-center gap-3 relative top-2 md:top-4 py-5 lg:top-6">
                                     <a class="text-gray-500" href="https://www.facebook.com/SukoonDiabetesCentre" target="_blank">
