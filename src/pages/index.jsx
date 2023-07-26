@@ -17,6 +17,10 @@ import axios from 'axios'
 import { FaBars } from 'react-icons/fa'
 import { secureRandom } from '@/components/repeatedFunctions'
 import Footer from '@/components/footer'
+window.$name = 'https://click.daraz.pk/e/_CWG1y9' //global variable
+
+
+ReactDOM.render(<App />, document.getElementById('root'));
 
 export default function Home() {
   const [isNavbarShown, setNavbarShown] = useState(false)
