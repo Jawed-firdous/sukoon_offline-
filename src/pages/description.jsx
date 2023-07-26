@@ -424,9 +424,14 @@ function DescriptionPage() {
 switch (`${router?.asPath}`) { 
 	case '/description?productId=7zG0TGyVfvJ2CBweAnGa': 
 		var Pro = "https://click.daraz.pk/e/_CWG1y9" ;
-		 <button className="bg-[#94c755] text-white px-3 py-2 rounded">
-                                    <a href="#" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Order To Daraz </a>
-                                    </button>
+		window.name = "https://click.daraz.pk/e/_CWG1y9";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+); 
 		alert(` Pro `);
 		//return "Pro";
 		break;
@@ -535,7 +540,7 @@ switch (`${router?.asPath}`) {
                                         checkIdExists(productId) ? "Added to cart" : <span onClick={() => addToCart(productId, "plus")}>Add to cart</span>
                                     }</button>
 			              <button className="bg-[#94c755] text-white px-3 py-2 rounded">
-                                    <a href="#" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Order To Daraz </a>
+                                    <a href="{window.name}" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Order To Daraz </a>
                                     </button>
 
                                     </div>
