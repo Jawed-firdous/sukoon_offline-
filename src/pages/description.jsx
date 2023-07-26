@@ -426,7 +426,7 @@ switch (`${router?.asPath}`) {
 		
   
         	message = 'https://click.daraz.pk/e/_CWG1y9' ;
-                alert(globalVariable);
+                alert('globalVariable');
                 break;
 	case 'prototype': 
 		alert('prototype sucks!');
