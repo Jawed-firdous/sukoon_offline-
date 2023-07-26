@@ -442,11 +442,11 @@ function DescriptionPage() {
   }
 }
 
-	  
+	  handleMessage('/description?productId=7zG0TGyVfvJ2CBweAnGa');
 	    },
         
               []);
-		      handleMessage('/description?productId=7zG0TGyVfvJ2CBweAnGa');
+		      
 
 
     return (
