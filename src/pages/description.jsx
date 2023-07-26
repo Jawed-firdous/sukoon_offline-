@@ -424,7 +424,7 @@ function DescriptionPage() {
 switch (`${router?.asPath}`) { 
 	case '/description?productId=7zG0TGyVfvJ2CBweAnGa': 
 		globalVariable = "https://click.daraz.pk/e/_CWG1y9" ;
-		alert(` Pro `);
+		alert(` console.log(globalVariable) `);
 		//return 'window.$name';
 		break;
 	case 'prototype': 
