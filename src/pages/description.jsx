@@ -420,7 +420,6 @@ function DescriptionPage() {
         getUserData()
         updateProductInLocalStorage();
 
-	    function handleMessage(router) {
   let message;
 
   switch (router?.asPath) {
@@ -440,7 +439,7 @@ function DescriptionPage() {
     default:
       alert(router.query.productId);
   }
-}
+
 
 	    },
               []);
