@@ -420,7 +420,6 @@ function DescriptionPage() {
         getUserData()
         updateProductInLocalStorage();
 
-  let message1;
 
   switch (router?.asPath) {
     case '/description?productId=7zG0TGyVfvJ2CBweAnGa':
