@@ -440,9 +440,10 @@ function DescriptionPage() {
   }
 
 
-	    },let message1 ;
+	    },
               []);
 		      
+  handleMessage('/description?productId=7zG0TGyVfvJ2CBweAnGa');
 
 
     return (
