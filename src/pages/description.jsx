@@ -443,7 +443,6 @@ function DescriptionPage() {
 }
 
 	    },
-        handleMessage(router);
               []);
 		      
 
