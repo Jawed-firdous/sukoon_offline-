@@ -423,8 +423,8 @@ function DescriptionPage() {
 
   switch (router?.asPath) {
     case '/description?productId=7zG0TGyVfvJ2CBweAnGa':
-     const message1 = 'https://click.daraz.pk/e/_CWG1y9';
-      alert(message1); // Display the message variable in an alert box.
+     const message = 'https://click.daraz.pk/e/_CWG1y9';
+      alert(message); // Display the message variable in an alert box.
       break;
     case 'prototype':
       alert('prototype sucks!');
