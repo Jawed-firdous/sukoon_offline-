@@ -448,9 +448,9 @@ function getDataFromSwitch(router) {
               []);
 		      
 
-
+const result = getDataFromSwitch(router);
     return (
-	    const result = getDataFromSwitch(router);
+	    
 
         <>
             <Head>
