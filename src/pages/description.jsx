@@ -444,7 +444,7 @@ function getDataFromSwitch(router) {
 const YourComponent = ({ router }) => {
   const result = getDataFromSwitch(router);
 
-
+};
 	    },
               []);
 		      
@@ -772,7 +772,7 @@ const YourComponent = ({ router }) => {
         </>
     )
 }
-	      };
-export default YourComponent;
+	      
+//export default YourComponent;
 
 export default DescriptionPage
