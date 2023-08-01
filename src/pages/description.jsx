@@ -420,24 +420,29 @@ function DescriptionPage() {
         getUserData()
         updateProductInLocalStorage();
 
-
+function getDataFromSwitch(router) {
+  let message;
   switch (router?.asPath) {
     case '/description?productId=7zG0TGyVfvJ2CBweAnGa':
-     const message = 'https://click.daraz.pk/e/_CWG1y9';
-      alert(message); // Display the message variable in an alert box.
+      message = 'https://click.daraz.pk/e/_CWG1y9';
       break;
     case 'prototype':
-      alert('prototype sucks!');
-      break; // Add break to avoid fallthrough.
+      message = 'prototype sucks!';
+      break;
     case 'mootools':
-      alert('mootools sucks!');
-      break; // Add break to avoid fallthrough.
+      message = 'mootools sucks!';
+      break;
     case 'dojo':
-      alert('dojo sucks!');
+      message = 'dojo sucks!';
       break;
     default:
-      alert(router.query.productId);
+      message = router.query.productId;
   }
+
+  return message; // Return the data (message) from the function.
+}
+const result = getDataFromSwitch(router);
+
 
 
 	    },
@@ -534,7 +539,7 @@ function DescriptionPage() {
                                         checkIdExists(productId) ? "Added to cart" : <span onClick={() => addToCart(productId, "plus")}>Add to cart</span>
                                     }</button>
 			              <button className="bg-[#94c755] text-white px-3 py-2 rounded">
-                                    <a href="{'message'}" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Order To Daraz </a>
+                                    <a href="{console.log(result);}" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Order To Daraz </a>
                                     </button>
 
                                     </div>
