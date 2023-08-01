@@ -441,11 +441,11 @@ function getDataFromSwitch(router) {
 
   return message; // Return the data (message) from the function.
 }
+	      const result = getDataFromSwitch(router);
 
 
 
 	    },
-	      const result = getDataFromSwitch(router);
               []);
 		      
 
