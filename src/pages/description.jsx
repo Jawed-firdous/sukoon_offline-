@@ -445,10 +445,11 @@ function getDataFromSwitch(router) {
 
 
 	    },
+	      const result = getDataFromSwitch(router);
               []);
 		      
 
-const result = getDataFromSwitch(router);
+
     return (
 	    
 
