@@ -772,7 +772,7 @@ const YourComponent = ({ router }) => {
         </>
     )
 }
-};
+
 
 
 export default DescriptionPage
