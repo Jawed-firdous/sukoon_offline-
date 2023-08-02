@@ -27,7 +27,6 @@ import { signOut } from "firebase/auth";
 function DescriptionPage() {
     const router = useRouter()
     // const productId = router.query?.productId;
-    let message = null;
     const [productId, setProductId] = useState(null)
     const [data, setData] = useState([])
     const [showCart, setShowCart] = useState(false)
@@ -420,6 +419,9 @@ function DescriptionPage() {
     useEffect(() => {
         getUserData()
         updateProductInLocalStorage();
+    let message ;
+
+	    
 function getDataFromSwitch(router) {
 
   switch (router?.asPath) {
