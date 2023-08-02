@@ -27,7 +27,7 @@ import { signOut } from "firebase/auth";
 function DescriptionPage() {
     const router = useRouter()
     // const productId = router.query?.productId;
-	    let message=null ;
+	  //  let message=null ;
     const [productId, setProductId] = useState(null)
     const [data, setData] = useState([])
     const [showCart, setShowCart] = useState(false)
