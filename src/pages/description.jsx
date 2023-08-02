@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import React from "react";
 import axios from "axios";
-import { doc, getDoc, where, query, collection, onSnapshot, addDoc, Timestamp, updateDoc } from "firebase/firestore";
+import { doc, getDoc, where, query, collection, onSnapshot, addDoc, Timestamp, updateDoc } from "firebase/firestore"
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { db } from "@/config/firebase.config";
@@ -24,10 +24,10 @@ import { AiFillStar, AiOutlineStar } from "react-icons/ai"
 import { secureRandom } from "@/components/repeatedFunctions";
 import Footer from "@/components/footer";
 import { signOut } from "firebase/auth";
+
 function DescriptionPage() {
     const router = useRouter()
     // const productId = router.query?.productId;
-	  //  let message=null ;
     const [productId, setProductId] = useState(null)
     const [data, setData] = useState([])
     const [showCart, setShowCart] = useState(false)
@@ -42,6 +42,7 @@ function DescriptionPage() {
     const [isAddressModalOpen, setAddressModalOpen] = useState(false)
     const [newAddress, setNewAddress] = useState(null)
     const [email, setEmail] = useState(auth?.currentUser?.email)
+                
 
     // New JS 
     const showModal = () => {
@@ -402,8 +403,6 @@ function DescriptionPage() {
             }
         });
     }
-	              
-
     useEffect(() => {
         if (router.query.productId) {
             setProductId(router.query.productId);
@@ -419,36 +418,13 @@ function DescriptionPage() {
 
     useEffect(() => {
         getUserData()
-        updateProductInLocalStorage();
+        updateProductInLocalStorage()
 
-	    
-
-  switch (router?.asPath) {
-    case '/description?productId=7zG0TGyVfvJ2CBweAnGa':
-      message = 'https://click.daraz.pk/e/_CWG1y9';
-      break;
-    case 'prototype':
-      message = 'prototype sucks!';
-      break;
-    case 'mootools':
-      message = 'mootools sucks!';
-      break;
-    case 'dojo':
-      message = 'dojo sucks!';
-      break;
-    default:
-      message = 'empty';
-  }
     },
 
-	    
-              []);
-		      
-
+              [])
 
     return (
-	    
-
         <>
             <Head>
                 <title>{data?.name}</title>
@@ -457,7 +433,7 @@ function DescriptionPage() {
             {contextHolder}
             {notifictionContextHolder}
             <nav className="flex justify-between items-center px-3 border-b-2 border-[#94c755] bg-white fixed top-0 z-50 w-full">
-                <div >
+                <div>
                 <Link href={"/"}>
                             <Image src={logo} width={80} height={80} alt='Logo'></Image>
                         </Link>                </div>
@@ -536,28 +512,19 @@ function DescriptionPage() {
                                     <button className="bg-[#94c755] text-white px-3 py-2 rounded"> {
                                         checkIdExists(productId) ? "Added to cart" : <span onClick={() => addToCart(productId, "plus")}>Add to cart</span>
                                     }</button>
-	<button className="bg-[#94c755] text-white px-3 py-2 rounded">
-      <a href={"message"} className="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">
-        Order To Daraz
-      </a>
-    </button>
-
-                                    </div>
+                                </div>
 
                                 <div className="flex justify-center gap-3 relative top-2 md:top-4 py-5 lg:top-6">
                                     <a class="text-gray-500" href="https://www.facebook.com/SukoonDiabetesCentre" target="_blank">
                                         <FaFacebook />
                                     </a>
-
-                                   
                                     <a class="ml-3 text-gray-500" href="https://www.youtube.com/@sukoondiabetescentre1989/videos" target="_blank">
                                         <FaYoutube />
                                     </a>
                                     
-                                    <a class="ml-3 text-gray-500" href={`https://wa.me/+923322418007?text=https://sukoondiabeticcentre.com${router?.asPath}`} target="_blank">
+                                   <a class="ml-3 text-gray-500" href={`https://wa.me/+923322418007?text=https://sukoondiabeticcentre.com${router?.asPath}`} target="_blank">
                                         <FaWhatsapp />
                                     </a>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -767,9 +734,6 @@ function DescriptionPage() {
 
         </>
     )
-
 }
-}
-
 
 export default DescriptionPage
