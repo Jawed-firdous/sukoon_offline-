@@ -768,7 +768,8 @@ function DescriptionPage() {
         </>
     )
 
-
+}
+}
 
 
 export default DescriptionPage
