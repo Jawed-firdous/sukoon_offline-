@@ -422,7 +422,6 @@ function DescriptionPage() {
     let message ;
 
 	    
-function getDataFromSwitch(router) {
 
   switch (router?.asPath) {
     case '/description?productId=7zG0TGyVfvJ2CBweAnGa':
@@ -440,10 +439,6 @@ function getDataFromSwitch(router) {
     default:
       message = router.query.productId;
   }
-    }
-	      getDataFromSwitch(router);
-
-
 
 
 	    },
