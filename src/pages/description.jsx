@@ -439,9 +439,9 @@ function DescriptionPage() {
     default:
       message = 'empty';
   }
+    }
 
-
-	    },
+	    
               []);
 		      
 
