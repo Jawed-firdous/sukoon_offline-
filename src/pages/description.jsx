@@ -437,7 +437,7 @@ function DescriptionPage() {
       message = 'dojo sucks!';
       break;
     default:
-      message = "empty";
+      message = 'empty';
   }
 
 
