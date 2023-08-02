@@ -24,7 +24,7 @@ import { AiFillStar, AiOutlineStar } from "react-icons/ai"
 import { secureRandom } from "@/components/repeatedFunctions";
 import Footer from "@/components/footer";
 import { signOut } from "firebase/auth";
-
+let message = null;
 function DescriptionPage() {
     const router = useRouter()
     // const productId = router.query?.productId;
@@ -42,7 +42,6 @@ function DescriptionPage() {
     const [isAddressModalOpen, setAddressModalOpen] = useState(false)
     const [newAddress, setNewAddress] = useState(null)
     const [email, setEmail] = useState(auth?.currentUser?.email)
-              let message = null
 
     // New JS 
     const showModal = () => {
@@ -403,6 +402,8 @@ function DescriptionPage() {
             }
         });
     }
+	              
+
     useEffect(() => {
         if (router.query.productId) {
             setProductId(router.query.productId);
