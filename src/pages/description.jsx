@@ -42,7 +42,7 @@ function DescriptionPage() {
     const [isAddressModalOpen, setAddressModalOpen] = useState(false)
     const [newAddress, setNewAddress] = useState(null)
     const [email, setEmail] = useState(auth?.currentUser?.email)
-               const message = null;
+              let message = null
 
     // New JS 
     const showModal = () => {
@@ -421,7 +421,7 @@ function DescriptionPage() {
         updateProductInLocalStorage();
 
 function getDataFromSwitch(router) {
-  let message;
+  
   switch (router?.asPath) {
     case '/description?productId=7zG0TGyVfvJ2CBweAnGa':
       message = 'https://click.daraz.pk/e/_CWG1y9';
