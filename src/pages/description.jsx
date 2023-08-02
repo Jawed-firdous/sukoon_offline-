@@ -440,10 +440,8 @@ function getDataFromSwitch(router) {
       message = router.query.productId;
   }
 
-  return message; // Return the data (message) from the function.
 }
 
-  const result = getDataFromSwitch(router);
 
 	    },
               []);
