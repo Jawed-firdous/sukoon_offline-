@@ -421,8 +421,6 @@ function DescriptionPage() {
         getUserData()
         updateProductInLocalStorage();
 
-function getDataFromSwitch(router) {
-  
   switch (router?.asPath) {
     case '/description?productId=7zG0TGyVfvJ2CBweAnGa':
       message = 'https://click.daraz.pk/e/_CWG1y9';
@@ -440,7 +438,7 @@ function getDataFromSwitch(router) {
       message = router.query.productId;
   }
 
-}
+
 
 
 	    },
