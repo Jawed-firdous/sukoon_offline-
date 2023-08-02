@@ -439,7 +439,7 @@ function DescriptionPage() {
     default:
       message = 'empty';
   }
-    }
+    },
 
 	    
               []);
@@ -767,7 +767,7 @@ function DescriptionPage() {
 
         </>
     )
-}
+
 
 
 
