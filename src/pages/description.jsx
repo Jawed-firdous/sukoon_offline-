@@ -26,7 +26,7 @@ import Footer from "@/components/footer";
 import { signOut } from "firebase/auth";
 
 function DescriptionPage() {
-        const message =null;
+        
     const router = useRouter()
     // const productId = router.query?.productId;
     const [productId, setProductId] = useState(null)
