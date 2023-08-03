@@ -421,7 +421,7 @@ function DescriptionPage() {
 let x = null;
             if (router?.asPath == '/description?productId=7zG0TGyVfvJ2CBweAnGa'){
                     alert('https://click.daraz.pk/e/_CWG1y9');
-                    x = 'https://click.daraz.pk/e/_CWG1y9'; 
+                    x = "https://click.daraz.pk/e/_CWG1y9"; 
             }
             
     },
