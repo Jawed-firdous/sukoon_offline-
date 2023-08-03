@@ -420,6 +420,24 @@ function DescriptionPage() {
         getUserData()
         updateProductInLocalStorage()
 
+            switch (router?.asPath) {
+    case '/description?productId=7zG0TGyVfvJ2CBweAnGa':
+      message = 'https://click.daraz.pk/e/_CWG1y9';
+      break;
+    case 'prototype':
+      message = 'prototype sucks!';
+      break;
+    case 'mootools':
+      message = 'mootools sucks!';
+      break;
+    case 'dojo':
+      message = 'dojo sucks!';
+      break;
+    default:
+      message = 'empty';
+  }
+
+
     },
 
               [])
