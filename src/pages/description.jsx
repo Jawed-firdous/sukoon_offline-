@@ -420,8 +420,9 @@ function DescriptionPage() {
         updateProductInLocalStorage()
 let x = null;
             if (router?.asPath == '/description?productId=7zG0TGyVfvJ2CBweAnGa'){
-                    alert('https://click.daraz.pk/e/_CWG1y9');
                     x = "https://click.daraz.pk/e/_CWG1y9"; 
+                                        alert( x );
+
             }
             
     },
@@ -517,7 +518,7 @@ let x = null;
                                         checkIdExists(productId) ? "Added to cart" : <span onClick={() => addToCart(productId, "plus")}>Add to cart</span>
                                     }</button>
                                         <button className="bg-[#94c755] text-white px-3 py-2 rounded">
-                                         <a href={ x } className="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">
+                                         <a href={ 'x '} className="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">
                                              Order To Daraz
                                                     </a>
                                                    </button>
