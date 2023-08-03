@@ -43,7 +43,6 @@ function DescriptionPage() {
     const [isAddressModalOpen, setAddressModalOpen] = useState(false)
     const [newAddress, setNewAddress] = useState(null)
     const [email, setEmail] = useState(auth?.currentUser?.email)
-         let message =null;       
 
     // New JS 
     const showModal = () => {
