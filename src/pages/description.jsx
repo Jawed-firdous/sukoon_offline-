@@ -368,7 +368,7 @@ function DescriptionPage() {
         calculatePrice()
         getData()
     }
-
+let message = null;
     function checkIdExists(id) {
         let exists = false
         for (let i = 0; i < cart.length; i++) {
