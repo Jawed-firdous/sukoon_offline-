@@ -368,7 +368,6 @@ function DescriptionPage() {
         calculatePrice()
         getData()
     }
-let message = null;
     function checkIdExists(id) {
         let exists = false
         for (let i = 0; i < cart.length; i++) {
@@ -419,25 +418,20 @@ let message = null;
     useEffect(() => {
         getUserData()
         updateProductInLocalStorage()
+let message;
 
-            switch (router?.asPath) {
-    case '/description?productId=7zG0TGyVfvJ2CBweAnGa':
-      message = 'https://click.daraz.pk/e/_CWG1y9';
-      break;
-    case 'prototype':
-      message = 'prototype sucks!';
-      break;
-    case 'mootools':
-      message = 'mootools sucks!';
-      break;
-    case 'dojo':
-      message = 'dojo sucks!';
-      break;
-    default:
-      message = 'empty';
-  }
-
-
+  function handleMessage(router?.asPath) {
+    switch (router?.asPath) {
+      case '/description?productId=7zG0TGyVfvJ2CBweAnGa':
+        message = 'This is case 1.';
+        break;
+      case 'case2':
+        message = 'This is case 2.';
+        break;
+      default:
+        message = 'This is the default case.';
+    }
+          handleMessage('/description?productId=7zG0TGyVfvJ2CBweAnGa');
     },
 
               [])
@@ -530,6 +524,11 @@ let message = null;
                                     <button className="bg-[#94c755] text-white px-3 py-2 rounded"> {
                                         checkIdExists(productId) ? "Added to cart" : <span onClick={() => addToCart(productId, "plus")}>Add to cart</span>
                                     }</button>
+                                        <button className="bg-[#94c755] text-white px-3 py-2 rounded">
+                                         <a href={message} className="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">
+                                             Order To Daraz
+                                                    </a>
+                                                   </button>
                                 </div>
 
                                 <div className="flex justify-center gap-3 relative top-2 md:top-4 py-5 lg:top-6">
