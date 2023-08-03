@@ -418,7 +418,7 @@ function DescriptionPage() {
     useEffect(() => {
         getUserData()
         updateProductInLocalStorage()
-let message;
+//let message;
 
   function handleMessage(router?.asPath) {
     switch (router?.asPath) {
