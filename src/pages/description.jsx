@@ -418,20 +418,6 @@ function DescriptionPage() {
     useEffect(() => {
         getUserData()
         updateProductInLocalStorage()
-//let message;
-
-  function handleMessage(router?.asPath) {
-    switch (router?.asPath) {
-      case '/description?productId=7zG0TGyVfvJ2CBweAnGa':
-        message = 'This is case 1.';
-        break;
-      case 'case2':
-        message = 'This is case 2.';
-        break;
-      default:
-        message = 'This is the default case.';
-    }
-          handleMessage('/description?productId=7zG0TGyVfvJ2CBweAnGa');
     },
 
               [])
