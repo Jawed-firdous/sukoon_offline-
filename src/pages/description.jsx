@@ -419,7 +419,7 @@ function DescriptionPage() {
         getUserData()
         updateProductInLocalStorage()
             if (router?.asPath == '/description?productId=7zG0TGyVfvJ2CBweAnGa'){
-                 let   x = 'https://click.daraz.pk/e/_CWG1y9'; 
+                 let x = 'https://click.daraz.pk/e/_CWG1y9'; 
                                         alert( x );
 
 
