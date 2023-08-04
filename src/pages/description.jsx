@@ -418,11 +418,12 @@ function DescriptionPage() {
     useEffect(() => {
         getUserData()
         updateProductInLocalStorage()
-            if (router?.asPath == '/description?productId=7zG0TGyVfvJ2CBweAnGa'){
+           
+            }
+               if (router?.asPath == '/description?productId=7zG0TGyVfvJ2CBweAnGa'){
                     x = 'https://click.daraz.pk/e/_CWG1y9'; 
                                         alert( x );
 
-            }
             
   //   switch (router?.asPath) {
   //   case '/description?productId=7zG0TGyVfvJ2CBweAnGa':
