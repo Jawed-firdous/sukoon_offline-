@@ -26,7 +26,7 @@ import Footer from "@/components/footer";
 import { signOut } from "firebase/auth";
 
 function DescriptionPage() {
-        let x =null;
+        let x ="https://click.daraz.pk/e/_CWG1y9";
     const router = useRouter()
     // const productId = router.query?.productId;
     const [productId, setProductId] = useState(null)
@@ -536,7 +536,7 @@ function DescriptionPage() {
                                         checkIdExists(productId) ? "Added to cart" : <span onClick={() => addToCart(productId, "plus")}>Add to cart</span>
                                     }</button>
                                         <button className="bg-[#94c755] text-white px-3 py-2 rounded">
-                                         <a href={` $x `} target="_blank" className="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">
+                                         <a href={` ${x} `} target="_blank" className="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">
                                              Order To Daraz
                                                     </a>
                                                    </button>
