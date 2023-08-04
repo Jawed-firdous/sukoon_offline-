@@ -26,7 +26,7 @@ import Footer from "@/components/footer";
 import { signOut } from "firebase/auth";
 
 function DescriptionPage() {
-        let x ="https://www.daraz.pk/products/i426643452.html";
+        let x =null;
     const router = useRouter()
     // const productId = router.query?.productId;
     const [productId, setProductId] = useState(null)
@@ -426,7 +426,7 @@ function DescriptionPage() {
             
     switch (router?.asPath) {
     case '/description?productId=7zG0TGyVfvJ2CBweAnGa':
-      x = 'https://click.daraz.pk/e/_CWG1y9';
+      x = 'https://www.daraz.pk/products/i426643452.html';
       break;
     case 'prototype':
       x = 'prototype sucks!';
