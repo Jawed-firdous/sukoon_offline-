@@ -26,7 +26,7 @@ import Footer from "@/components/footer";
 import { signOut } from "firebase/auth";
 
 function DescriptionPage() {
-                       // let x;
+                       let x;
     const router = useRouter()
     // const productId = router.query?.productId;
     const [productId, setProductId] = useState(null)
@@ -419,7 +419,7 @@ function DescriptionPage() {
         getUserData()
         updateProductInLocalStorage()
          
-               let x;
+               
             
     switch (router?.asPath) {
     case '/description?productId=7zG0TGyVfvJ2CBweAnGa':
