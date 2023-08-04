@@ -27,7 +27,7 @@ import { signOut } from "firebase/auth";
 import React, { useState } from 'react';
 
 function DescriptionPage() {
-                         let [x, setx] = useState('initialValue');
+  let [x, setx] = useState('initialValue');
 
     const router = useRouter()
     // const productId = router.query?.productId;
@@ -422,7 +422,7 @@ function DescriptionPage() {
         updateProductInLocalStorage()
 
       if (router?.asPath == "/description?productId=7zG0TGyVfvJ2CBweAnGa"){
-      setx = ('https://www.daraz.pk/products/i426643452.htm');
+      setx = 'https://www.daraz.pk/products/i426643452.htm';
         alert(setx);
       }
                
