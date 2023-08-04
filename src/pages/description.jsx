@@ -418,36 +418,25 @@ function DescriptionPage() {
     useEffect(() => {
         getUserData()
         updateProductInLocalStorage()
-            // Assuming router is defined somewhere in your code or imported
-// Check if the router object exists and its asPath matches the specified path
-if (router?.asPath === '/description?productId=7zG0TGyVfvJ2CBweAnGa') {
-    // If the condition is true, set the value of variable 'x' to "https://click.daraz.pk/e/_CWG1y9"
-    let x = "https://click.daraz.pk/e/_CWG1y9";
-    // Display an alert with the value of 'x', which will show the URL "https://click.daraz.pk/e/_CWG1y9"
-    alert(x);
-} else {
-    // Handle the case when the condition is false or when router is not available
-    console.log("Router object not available or path does not match.");
-}
-
-               
+         
+               let x;
             
-  //   switch (router?.asPath) {
-  //   case '/description?productId=7zG0TGyVfvJ2CBweAnGa':
-  //     x = 'https://www.daraz.pk/products/i426643452.html';
-  //     break;
-  //   case 'prototype':
-  //     x = 'prototype sucks!';
-  //     break;
-  //   case 'mootools':
-  //     x = 'mootools sucks!';
-  //     break;
-  //   case 'dojo':
-  //     x = 'dojo sucks!';
-  //     break;
-  //   default:
-  //     x = 'empty';
-  // }
+    switch (router?.asPath) {
+    case '/description?productId=7zG0TGyVfvJ2CBweAnGa':
+      x = 'https://www.daraz.pk/products/i426643452.html';
+      break;
+    case 'prototype':
+      x = 'prototype sucks!';
+      break;
+    case 'mootools':
+      x = 'mootools sucks!';
+      break;
+    case 'dojo':
+      x = 'dojo sucks!';
+      break;
+    default:
+      x = 'empty';
+  }
 
 
     
