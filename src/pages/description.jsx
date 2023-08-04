@@ -26,7 +26,8 @@ import Footer from "@/components/footer";
 import { signOut } from "firebase/auth";
 
 function DescriptionPage() {
-                       let x;
+                         const [x, setx] = useState('initialValue');
+
     const router = useRouter()
     // const productId = router.query?.productId;
     const [productId, setProductId] = useState(null)
@@ -418,25 +419,29 @@ function DescriptionPage() {
     useEffect(() => {
         getUserData()
         updateProductInLocalStorage()
-         
+
+      if (router?.asPath == "/description?productId=7zG0TGyVfvJ2CBweAnGa"){
+      setx = "https://www.daraz.pk/products/i426643452.html";
+        alert(setx);
+      }
                
             
-    switch (router?.asPath) {
-    case '/description?productId=7zG0TGyVfvJ2CBweAnGa':
-      x = 'https://www.daraz.pk/products/i426643452.html';
-      break;
-    case 'prototype':
-      x = 'prototype sucks!';
-      break;
-    case 'mootools':
-      x = 'mootools sucks!';
-      break;
-    case 'dojo':
-      x = 'dojo sucks!';
-      break;
-    default:
-      x = 'empty';
-  }
+  //   switch (router?.asPath) {
+  //   case '/description?productId=7zG0TGyVfvJ2CBweAnGa':
+  //     x = 'https://www.daraz.pk/products/i426643452.html';
+  //     break;
+  //   case 'prototype':
+  //     x = 'prototype sucks!';
+  //     break;
+  //   case 'mootools':
+  //     x = 'mootools sucks!';
+  //     break;
+  //   case 'dojo':
+  //     x = 'dojo sucks!';
+  //     break;
+  //   default:
+  //     x = 'empty';
+  // }
 
 
     
@@ -533,7 +538,7 @@ function DescriptionPage() {
                                         checkIdExists(productId) ? "Added to cart" : <span onClick={() => addToCart(productId, "plus")}>Add to cart</span>
                                     }</button>
                                         <button className="bg-[#94c755] text-white px-3 py-2 rounded">
-                                         <a href={` ${x} `} target="_blank" className="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">
+                                         <a href={` ${setx} `} target="_blank" className="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">
                                              Order To Daraz
                                                     </a>
                                                    </button>
