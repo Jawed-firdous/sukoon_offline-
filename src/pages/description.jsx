@@ -24,6 +24,7 @@ import { AiFillStar, AiOutlineStar } from "react-icons/ai"
 import { secureRandom } from "@/components/repeatedFunctions";
 import Footer from "@/components/footer";
 import { signOut } from "firebase/auth";
+import React, { useState } from 'react';
 
 function DescriptionPage() {
                          let [x, setx] = useState('initialValue');
@@ -421,7 +422,7 @@ function DescriptionPage() {
         updateProductInLocalStorage()
 
       if (router?.asPath == "/description?productId=7zG0TGyVfvJ2CBweAnGa"){
-      setx = "https://www.daraz.pk/products/i426643452.html";
+      setx = ('https://www.daraz.pk/products/i426643452.htm');
         alert(setx);
       }
                
