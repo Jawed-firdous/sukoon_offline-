@@ -26,7 +26,7 @@ import Footer from "@/components/footer";
 import { signOut } from "firebase/auth";
 
 function DescriptionPage() {
-        let x =null;
+        let x=null;
     const router = useRouter()
     // const productId = router.query?.productId;
     const [productId, setProductId] = useState(null)
@@ -418,28 +418,28 @@ function DescriptionPage() {
     useEffect(() => {
         getUserData()
         updateProductInLocalStorage()
-            // if (router?.asPath == '/description?productId=7zG0TGyVfvJ2CBweAnGa'){
-            //         x = 'https://click.daraz.pk/e/_CWG1y9'; 
-            //                             alert( x );
+            if (router?.asPath == '/description?productId=7zG0TGyVfvJ2CBweAnGa'){
+                    x = 'https://click.daraz.pk/e/_CWG1y9'; 
+                                        alert( x );
 
-            // }
+            }
             
-    switch (router?.asPath) {
-    case '/description?productId=7zG0TGyVfvJ2CBweAnGa':
-      x = 'https://www.daraz.pk/products/i426643452.html';
-      break;
-    case 'prototype':
-      x = 'prototype sucks!';
-      break;
-    case 'mootools':
-      x = 'mootools sucks!';
-      break;
-    case 'dojo':
-      x = 'dojo sucks!';
-      break;
-    default:
-      x = 'empty';
-  }
+  //   switch (router?.asPath) {
+  //   case '/description?productId=7zG0TGyVfvJ2CBweAnGa':
+  //     x = 'https://www.daraz.pk/products/i426643452.html';
+  //     break;
+  //   case 'prototype':
+  //     x = 'prototype sucks!';
+  //     break;
+  //   case 'mootools':
+  //     x = 'mootools sucks!';
+  //     break;
+  //   case 'dojo':
+  //     x = 'dojo sucks!';
+  //     break;
+  //   default:
+  //     x = 'empty';
+  // }
 
 
     
