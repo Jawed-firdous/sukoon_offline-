@@ -26,7 +26,7 @@ import Footer from "@/components/footer";
 import { signOut } from "firebase/auth";
 
 function DescriptionPage() {
-                       let x="a";
+                       // let x;
     const router = useRouter()
     // const productId = router.query?.productId;
     const [productId, setProductId] = useState(null)
@@ -419,7 +419,7 @@ function DescriptionPage() {
         getUserData()
         updateProductInLocalStorage()
             if (router?.asPath == '/description?productId=7zG0TGyVfvJ2CBweAnGa'){
-                    x = 'https://click.daraz.pk/e/_CWG1y9'; 
+                 let   x = 'https://click.daraz.pk/e/_CWG1y9'; 
                                         alert( x );
 
 
