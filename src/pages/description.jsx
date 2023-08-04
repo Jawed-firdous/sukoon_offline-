@@ -24,10 +24,9 @@ import { AiFillStar, AiOutlineStar } from "react-icons/ai"
 import { secureRandom } from "@/components/repeatedFunctions";
 import Footer from "@/components/footer";
 import { signOut } from "firebase/auth";
-import React, { useState } from 'react';
 
 function DescriptionPage() {
-  let [x, setx] = useState('initialValue');
+  
 
     const router = useRouter()
     // const productId = router.query?.productId;
@@ -421,30 +420,7 @@ function DescriptionPage() {
         getUserData()
         updateProductInLocalStorage()
 
-      if (router?.asPath == "/description?productId=7zG0TGyVfvJ2CBweAnGa"){
-      setx = 'https://www.daraz.pk/products/i426643452.htm';
-        alert(setx);
-      }
-               
-            
-  //   switch (router?.asPath) {
-  //   case '/description?productId=7zG0TGyVfvJ2CBweAnGa':
-  //     x = 'https://www.daraz.pk/products/i426643452.html';
-  //     break;
-  //   case 'prototype':
-  //     x = 'prototype sucks!';
-  //     break;
-  //   case 'mootools':
-  //     x = 'mootools sucks!';
-  //     break;
-  //   case 'dojo':
-  //     x = 'dojo sucks!';
-  //     break;
-  //   default:
-  //     x = 'empty';
-  // }
-
-
+      
     
     },
 
