@@ -26,7 +26,6 @@ import Footer from "@/components/footer";
 import { signOut } from "firebase/auth";
 
 function DescriptionPage() {
-        let x=null;
     const router = useRouter()
     // const productId = router.query?.productId;
     const [productId, setProductId] = useState(null)
@@ -418,12 +417,14 @@ function DescriptionPage() {
     useEffect(() => {
         getUserData()
         updateProductInLocalStorage()
-           
-            }
-               if (router?.asPath == '/description?productId=7zG0TGyVfvJ2CBweAnGa'){
+                   let x=null;
+            if (router?.asPath == '/description?productId=7zG0TGyVfvJ2CBweAnGa'){
                     x = 'https://click.daraz.pk/e/_CWG1y9'; 
                                         alert( x );
 
+
+            }
+               
             
   //   switch (router?.asPath) {
   //   case '/description?productId=7zG0TGyVfvJ2CBweAnGa':
