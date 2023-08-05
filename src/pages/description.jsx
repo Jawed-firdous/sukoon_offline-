@@ -26,10 +26,7 @@ import Footer from "@/components/footer";
 import { signOut } from "firebase/auth";
 
 function DescriptionPage() {
-  
-
     const router = useRouter()
-    // const productId = router.query?.productId;
     const [productId, setProductId] = useState(null)
     const [data, setData] = useState([])
     const [showCart, setShowCart] = useState(false)
@@ -38,12 +35,9 @@ function DescriptionPage() {
     const [api, notifictionContextHolder] = notification.useNotification();
     const [cart, setCart] = useState([]);
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [oldPassword, setOldPassword] = useState("")
-    const [newPassword, setNewPassword] = useState("")
     const [userData, setUserData] = useState()
     const [isAddressModalOpen, setAddressModalOpen] = useState(false)
     const [newAddress, setNewAddress] = useState(null)
-    const [email, setEmail] = useState(auth?.currentUser?.email)
 
     // New JS 
     const showModal = () => {
@@ -419,12 +413,9 @@ function DescriptionPage() {
     useEffect(() => {
         getUserData()
         updateProductInLocalStorage()
-
-      
-    
     },
 
-              [])
+        [])
 
     return (
         <>
@@ -436,9 +427,9 @@ function DescriptionPage() {
             {notifictionContextHolder}
             <nav className="flex justify-between items-center px-3 border-b-2 border-[#94c755] bg-white fixed top-0 z-50 w-full">
                 <div>
-                <Link href={"/"}>
-                            <Image src={logo} width={80} height={80} alt='Logo'></Image>
-                        </Link>                </div>
+                    <Link href={"/"}>
+                        <Image src={logo} width={80} height={80} alt='Logo'></Image>
+                    </Link>                </div>
                 <ul className="items-center gap-x-8 hidden md:flex">
                     <Link href={"/"} className='hover:border-b-2 border-[#94c755] hover:cursor-pointer'>Home</Link>
                     <Link href={"/about"} className='hover:border-b-2 border-[#94c755] hover:cursor-pointer'>About</Link>
@@ -492,7 +483,7 @@ function DescriptionPage() {
                                                     <div key={index} className="unique-div !min-h-[240px] !flex !justify-center !items-center">
                                                         <img src={val?.url} alt="" className='m-auto h-[256px]' />
                                                     </div>
-                                                    
+
                                                     // </div>
                                                 )
                                             })
@@ -514,11 +505,11 @@ function DescriptionPage() {
                                     <button className="bg-[#94c755] text-white px-3 py-2 rounded"> {
                                         checkIdExists(productId) ? "Added to cart" : <span onClick={() => addToCart(productId, "plus")}>Add to cart</span>
                                     }</button>
-                                        <button className="bg-[#94c755] text-white px-3 py-2 rounded">
-                                         <a href={` ${x} `} target="_blank" className="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">
-                                             Order To Daraz
-                                                    </a>
-                                                   </button>
+                                    {data?.darazLink?.length > 10 && <button className="bg-[#94c755] text-white px-3 py-2 rounded">
+                                        <a href={data?.darazLink} target='_blank' className="btn btn-primary btn-lg" role="button">
+                                            Order From Daraz
+                                        </a>
+                                    </button>}
                                 </div>
 
                                 <div className="flex justify-center gap-3 relative top-2 md:top-4 py-5 lg:top-6">
@@ -528,8 +519,8 @@ function DescriptionPage() {
                                     <a class="ml-3 text-gray-500" href="https://www.youtube.com/@sukoondiabetescentre1989/videos" target="_blank">
                                         <FaYoutube />
                                     </a>
-                                    
-                                   <a class="ml-3 text-gray-500" href={`https://wa.me/+923322418007?text=https://sukoondiabeticcentre.com${router?.asPath}`} target="_blank">
+
+                                    <a class="ml-3 text-gray-500" href={`https://wa.me/+923322418007?text=https://sukoondiabeticcentre.com${router?.asPath}`} target="_blank">
                                         <FaWhatsapp />
                                     </a>
                                 </div>
