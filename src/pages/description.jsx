@@ -505,7 +505,7 @@ function DescriptionPage() {
                                     <button className="bg-[#94c755] text-white px-3 py-2 rounded"> {
                                         checkIdExists(productId) ? "Added to cart" : <span onClick={() => addToCart(productId, "plus")}>Add to cart</span>
                                     }</button>
-                                    {data?.darazLink?.length > 10 && <button className="bg-[#94c755] text-white px-3 py-2 rounded">
+                                    {data?.darazLink?.length > 10 && <button className="bg-[#f57224] text-white px-3 py-2 rounded">
                                         <a href={data?.darazLink} target='_blank' className="btn btn-primary btn-lg" role="button">
                                             Order From Daraz
                                         </a>
